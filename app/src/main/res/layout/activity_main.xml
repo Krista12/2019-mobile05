@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Button
+        android:id="@+id/btn_static_fragment"
+        android:layout_width="423dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:onClick="handlerClikStaticFragment"
+        android:text="contoh static fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dynamic_fragment"
+        android:layout_width="473dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:onClick="handlerClickDynamicFragment"
+        android:text="contoh dynamic fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_static_fragment" />
+
+    <Button
+        android:id="@+id/btn_praktikum_fragment"
+        android:layout_width="425dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:onClick="handlerClickTugasPraktikumFragment"
+        android:text="tugas praktikum fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dynamic_fragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
